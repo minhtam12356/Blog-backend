@@ -3,7 +3,10 @@
     "builds": [
         {
             "src": "./blog.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "build": false
+            }
         }
     ],
     "build": {
