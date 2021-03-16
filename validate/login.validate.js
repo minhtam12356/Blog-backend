@@ -1,6 +1,6 @@
 module.exports.postLogin = async function(req, res, next){   
     const userModel = require('../models/user.model');
-    const bcrypt = require('bcrypt');
+    const bcrypt = require('bcrypt-nodejs');
 
     const searchListUser = req.body.username;
     const searchListPass = req.body.password;
